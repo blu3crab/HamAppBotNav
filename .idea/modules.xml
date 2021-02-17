@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/HamAppBotNav.iml" filepath="$PROJECT_DIR$/.idea/modules/HamAppBotNav.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HamAppBotNav.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HamAppBotNav.app.iml" />
     </modules>
   </component>
 </project>
