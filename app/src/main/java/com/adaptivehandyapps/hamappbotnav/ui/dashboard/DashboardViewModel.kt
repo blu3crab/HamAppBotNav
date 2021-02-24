@@ -9,9 +9,10 @@ class DashboardViewModel : ViewModel() {
     private var _text = MutableLiveData<String>().apply {
         value = "--"
     }
-    val text: LiveData<String> = _text
+    var text: MutableLiveData<String> = _text
 
     fun setValue(text: String) {
         _text.value = text
+        this.text = _text
     }
 }

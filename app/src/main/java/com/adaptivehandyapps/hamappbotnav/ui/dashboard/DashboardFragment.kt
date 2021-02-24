@@ -19,6 +19,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 
 import com.adaptivehandyapps.hamappbotnav.R
+import com.adaptivehandyapps.hamappbotnav.model.HamHttpServer
 
 class DashboardFragment : Fragment() {
     private val TAG = "DashboardFragment"
@@ -89,6 +90,11 @@ class DashboardFragment : Fragment() {
         val imageView: ImageView = root.findViewById(R.id.imageV)
         imageView.background = BitmapDrawable(getResources(), bitmap)
         //////////////////////////////////////////
+//        // establish HAM HTTP server to rcv HR on POST & send metadata on GET
+//        val hamHttpServer: HamHttpServer = HamHttpServer()
+//        hamHttpServer.establishHttpServer()
+//        hamHttpServer.establishHttpServer(dashboardViewModel)
+
         return root
     }
 }

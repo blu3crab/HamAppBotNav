@@ -1,6 +1,7 @@
 package com.adaptivehandyapps.hamappbotnav.model
 
 import android.util.Log
+import com.adaptivehandyapps.hamappbotnav.ui.dashboard.DashboardViewModel
 
 import io.ktor.application.*
 import io.ktor.features.*
@@ -17,6 +18,7 @@ class HamHttpServer {
 
     // establish HTTP server for HAM GET & POST
     fun establishHttpServer() {
+//        fun establishHttpServer(dashboardViewModel: DashboardViewModel) {
         embeddedServer(Netty, 8080) {
             install(ContentNegotiation) {
                 gson {}
@@ -37,6 +39,8 @@ class HamHttpServer {
                     val text: String = call.receiveText()
                     Log.d(TAG, "embeddedServer /heartRate post-receive -> $text")
                     call.respondText(HttpStatusCode.OK.toString())
+//                    dashboardViewModel.setValue("88")
+//                    dashboardViewModel.text.value = "77"
                 }
             }
 
